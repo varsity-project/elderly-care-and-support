@@ -104,35 +104,35 @@
 
 <form action="{{ route('admin.events') }}" method="POST" enctype="multipart/form-data">
    @csrf
-   <div class="form-group">
+  
        <label for="name">Event Name</label>
-       <input type="text" name="name" id="name" class="form-control" placeholder="Event Name" required>
-   </div>
+       <input type="text" name="name" id="name" class="box" placeholder="Event Name" required>
+   
 
-   <div class="form-group">
+  
        <label for="date">Date</label>
-       <input type="date" name="date" id="date" class="form-control" required>
-   </div>
+       <input type="date" name="date" id="date"class="box"  required>
+  
 
-   <div class="form-group">
+  
        <label for="location">Location</label>
-       <input type="text" name="location" id="location" class="form-control" placeholder="Location" required>
-   </div>
+       <input type="text" name="location" id="location" class="box" placeholder="Location" required>
+   
 
-   <div class="form-group">
+   
        <label for="description">Event Description</label>
-       <textarea name="description" id="description" class="form-control" placeholder="Event Description"></textarea>
-   </div>
+       <textarea name="description" id="description"class="box" placeholder="Event Description"></textarea>
+   
 
-   <div class="form-group">
+
        <label for="image">Event Image</label>
-       <input type="file" name="image" id="image"accept="image/*" class="form-control">
-   </div>
+       <input type="file" name="image" id="image"class="box"accept="image/*">
+  
 
-   <div class="form-group">
+   
        <label for="cost">Cost</label>
-       <input type="number" name="cost" id="cost" class="form-control" placeholder="Cost" step="0.01" min="0" required>
-   </div>
+       <input type="number" name="cost" id="cost" placeholder="Cost"class="box" step="0.01" min="0" required>
+
 
    <input type="submit" value="Add Event" class="btn btn-primary">
 </form>
