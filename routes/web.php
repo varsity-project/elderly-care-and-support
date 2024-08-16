@@ -106,6 +106,13 @@ Route::put('/admin/events/{event_id}', [EventController::class, 'update'])->name
 Route::get("/account/event",[UserEventController::class,"index"])->name('account.event');
 Route::get("/account/event",[UserEventController::class,"get"])->name('account.event');
 
+
+
+//query
+Route::get('/admin/dashboard', [AdminDashboardController::class, 'count'])->name('admin.dashboard');
+
+
+
 });
 
 
